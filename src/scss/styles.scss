@@ -1,17 +1,7 @@
-
-@import url('./header.scss');
-@import url('./hero.scss');
-@import url('./game-description.scss');
-@import url('./how-to-play.scss');
-@import url('./faq.scss');
-@import url('./reviews.scss');
-@import url('./gallery.scss');
-@import url('./footer.scss');
-
 :root {
   font-family: $_main_font;
   font-size: 20px;
-  line-height: 24px;
+  /* line-height: 24px; */
   font-weight: 400;
 
   color: $_main_color;
@@ -23,3 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+@import url('./header.scss');
+@import url('./hero.scss');
+@import url('./game-description.scss');
+@import url('./how-to-play.scss');
+@import url('./faq.scss');
+@import url('./reviews.scss');
+@import url('./gallery.scss');
+@import url('./footer.scss');

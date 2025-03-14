@@ -27,3 +27,11 @@ screen types:
 
   line-height: math.div(math.round($result * 100), 100);
 }
+
+@mixin retina {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 2dppx),
+         (min-resolution: 192dpi) {
+    @content;
+  }
+}
