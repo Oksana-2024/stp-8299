@@ -1,20 +1,21 @@
-@import './header.scss';
-@import './hero.scss';
-@import './game-description.scss';
-@import './how-to-play.scss';
-@import './faq.scss';
-@import './reviews.scss';
-@import './gallery.scss';
-@import './footer.scss';
+
+@import url('./header.scss');
+@import url('./hero.scss');
+@import url('./game-description.scss');
+@import url('./how-to-play.scss');
+@import url('./faq.scss');
+@import url('./reviews.scss');
+@import url('./gallery.scss');
+@import url('./footer.scss');
 
 :root {
-  font-family: 'PoetsenOne', sans-serif;
+  font-family: $_main_font;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: $_main_color;
+  background-color: $_main_bg_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
