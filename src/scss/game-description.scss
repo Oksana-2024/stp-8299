@@ -1,0 +1,106 @@
+.descr-page {
+  padding-top: 68px;
+}
+.container.container-descr {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../img/descr_bg_m.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  @include retina {
+    background-image: url('../img/descr_bg_m@2x.png');
+  }
+  @include media(desktop) {
+    background-image: url('../img/descr_bg_d.png');
+    padding: 0 56px;
+    @include retina {
+      background-image: url('../img/descr_bg_d@2x.png');
+    }
+  }
+}
+.title-descr {
+  font-size: 24px;
+  text-align: center;
+  color: $_title_color;
+  text-shadow: -2px -2px 0 $_text_stroke, 2px -2px 0 $_text_stroke,
+    -2px 2px 0 $_text_stroke, 2px 2px 0 $_text_stroke, 0px -2px 0 $_text_stroke,
+    0px 2px 0 $_text_stroke, -2px 0px 0 $_text_stroke, 2px 0px 0 $_text_stroke;
+  margin-bottom: 20px;
+  @include media(desktop) {
+    font-size: 48px;
+    text-shadow: -3px -3px 0 $_text_stroke, 3px -3px 0 $_text_stroke,
+      -3px 3px 0 $_text_stroke, 3px 3px 0 $_text_stroke,
+      0px -3px 0 $_text_stroke, 0px 3px 0 $_text_stroke,
+      -3px 0px 0 $_text_stroke, 3px 0px 0 $_text_stroke;
+    margin-bottom: 24px;
+  }
+}
+.text-descr {
+  width: 288px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 48px;
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 0;
+    width: 716px;
+  }
+}
+.list-descr {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  @include media(desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 352px);
+    grid-template-rows: repeat(2, 216px);
+    gap: 16px 14px;
+    padding-bottom: 232px;
+    /* justify-content: center; */
+  }
+}
+.item-descr {
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  @include media(desktop) {
+    width: 352px;
+    height: 216px;
+  }
+}
+
+.item-descr:nth-child(2) {
+  @include media(desktop) {
+    grid-column: 2;
+    grid-row: 1;
+    transform: translateY(80px);
+  }
+}
+
+.item-descr:nth-child(5) {
+  @include media(desktop) {
+    grid-column: 2;
+    grid-row: 2;
+    transform: translateY(128px);
+  }
+}
+
+.icon-item-descr {
+  @include media(desktop) {
+    width: 64px;
+    height: 76px;
+  }
+}
+.text-item-descr {
+  text-align: center;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
