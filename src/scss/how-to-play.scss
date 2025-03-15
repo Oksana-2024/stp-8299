@@ -56,38 +56,6 @@
   }
 }
 
-.item-how-to-play:nth-child(1) {
-  @include media(desktop) {
-    grid-column: 1;
-    grid-row: 1;
-    transform: translateY(60px);
-  }
-}
-
-.item-how-to-play:nth-child(3) {
-  @include media(desktop) {
-    grid-column: 3;
-    grid-row: 1;
-    transform: translateY(60px);
-  }
-}
-
-.item-how-to-play:nth-child(4) {
-  @include media(desktop) {
-    grid-column: 1;
-    grid-row: 2;
-    transform: translateY(64px);
-  }
-}
-
-.item-how-to-play:nth-child(6) {
-  @include media(desktop) {
-    grid-column: 3;
-    grid-row: 2;
-    transform: translateY(64px);
-  }
-}
-
 .subtitle-how-to-play {
   font-size: 48px;
   text-align: center;
@@ -130,20 +98,40 @@
   }
 }
 
-.star-for-btn.fourth {
-  @include media(desktop) {
+@include media(desktop) {
+  .item-how-to-play:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+    transform: translateY(60px);
+  }
+
+  .item-how-to-play:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+    transform: translateY(60px);
+  }
+
+  .item-how-to-play:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
+    transform: translateY(64px);
+  }
+
+  .item-how-to-play:nth-child(6) {
+    grid-column: 3;
+    grid-row: 2;
+    transform: translateY(64px);
+  }
+
+  .star-for-btn.fourth {
     top: 92%;
   }
-}
 
-.text-how-to-play.fourth {
-  @include media(desktop) {
+  .text-how-to-play.fourth {
     padding-bottom: 24px;
   }
-}
 
-.how-to-play-btn {
-  @include media(desktop) {
+  .how-to-play-btn {
     position: absolute;
     top: 89%;
     right: 0;

@@ -1,6 +1,7 @@
 .descr-page {
   padding-top: 68px;
 }
+
 .container.container-descr {
   padding-bottom: 40px;
   display: flex;
@@ -21,6 +22,7 @@
     }
   }
 }
+
 .title-descr {
   font-size: 24px;
   text-align: center;
@@ -33,6 +35,7 @@
     margin-bottom: 24px;
   }
 }
+
 .text-descr {
   width: 288px;
   font-size: 20px;
@@ -44,6 +47,7 @@
     width: 716px;
   }
 }
+
 .list-descr {
   width: 100%;
   display: flex;
@@ -58,6 +62,7 @@
     padding-bottom: 232px;
   }
 }
+
 .item-descr {
   width: 288px;
   display: flex;
@@ -70,31 +75,29 @@
   }
 }
 
-.item-descr:nth-child(2) {
-  @include media(desktop) {
-    grid-column: 2;
-    grid-row: 1;
-    transform: translateY(80px);
-  }
-}
-
-.item-descr:nth-child(5) {
-  @include media(desktop) {
-    grid-column: 2;
-    grid-row: 2;
-    transform: translateY(128px);
-  }
-}
-
-.icon-item-descr {
-  @include media(desktop) {
-    width: 64px;
-    height: 76px;
-  }
-}
 .text-item-descr {
   text-align: center;
   @include media(desktop) {
     font-size: 24px;
   }
 }
+
+@include media(desktop) {
+  .item-descr:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+    transform: translateY(80px);
+  }
+
+  .item-descr:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+    transform: translateY(128px);
+  }
+
+  .icon-item-descr {
+    width: 64px;
+    height: 76px;
+  }
+}
+
