@@ -25,16 +25,11 @@
   font-size: 24px;
   text-align: center;
   color: $_title_color;
-  text-shadow: -2px -2px 0 $_text_stroke, 2px -2px 0 $_text_stroke,
-    -2px 2px 0 $_text_stroke, 2px 2px 0 $_text_stroke, 0px -2px 0 $_text_stroke,
-    0px 2px 0 $_text_stroke, -2px 0px 0 $_text_stroke, 2px 0px 0 $_text_stroke;
+  text-shadow: $_text_shadow_2px;
   margin-bottom: 20px;
   @include media(desktop) {
     font-size: 48px;
-    text-shadow: -3px -3px 0 $_text_stroke, 3px -3px 0 $_text_stroke,
-      -3px 3px 0 $_text_stroke, 3px 3px 0 $_text_stroke,
-      0px -3px 0 $_text_stroke, 0px 3px 0 $_text_stroke,
-      -3px 0px 0 $_text_stroke, 3px 0px 0 $_text_stroke;
+    text-shadow: $_text_shadow_3px;
     margin-bottom: 24px;
   }
 }
@@ -61,7 +56,6 @@
     grid-template-rows: repeat(2, 216px);
     gap: 16px 14px;
     padding-bottom: 232px;
-    /* justify-content: center; */
   }
 }
 .item-descr {
