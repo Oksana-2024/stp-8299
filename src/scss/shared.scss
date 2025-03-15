@@ -1,0 +1,55 @@
+//стилі для сторінок cookies, privacy, terms
+
+.cookies-page {
+  padding-top: 20px;
+}
+
+.link-return {
+  border-radius: 12px;
+  background: $_btn_gradient;
+  border: 4px solid $_accent_color;
+  box-shadow: 0 4px 4px 0 $_shadow_btn;
+  width: 80px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-arrow {
+  fill: $_accent_color;
+}
+
+.link-box {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.text-return-page {
+  font-size: 16px;
+}
+
+//p
+.paragraph {
+}
+
+//h3
+.subtitle {
+}
+
+.list-policy {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.list-item{
+  margin-bottom: 10px;
+}
+
+.website-link {
+  word-break: break-all;
+}
+.email-link {
+}

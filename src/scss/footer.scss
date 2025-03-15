@@ -76,7 +76,7 @@
   gap: 4px;
   border: 1px solid $_black;
   border-radius: 6px;
-  padding: 8px;
+  padding: 4px 8px;
   width: 120px;
   height: 40px;
   background-color: $_white;
@@ -112,10 +112,12 @@
 .store-text {
   font-size: 10px;
   text-transform: uppercase;
+  letter-spacing:0.03em;
 }
 
 .store-text-google {
   font-size: 14px;
+  letter-spacing:0.03em;
 }
 
 .star-footer {
