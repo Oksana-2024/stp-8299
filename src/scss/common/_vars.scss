@@ -1,6 +1,15 @@
 $_main_color: #fff;
 $_title_color: #ffe433;
 $_main_bg_color: #59b4f1;
+$_text_stroke: #eb4930;
 $_shadow: rgba(0, 0, 0, 0.25);
-$_text_stroke:#EB4930;
-$_main_font:'Poetsen One', sans-serif;
+
+$_main_font: 'Poetsen One', sans-serif;
+
+$_text_shadow_2px: -2px -2px 0 $_text_stroke, 2px -2px 0 $_text_stroke,
+  -2px 2px 0 $_text_stroke, 2px 2px 0 $_text_stroke, 0px -2px 0 $_text_stroke,
+  0px 2px 0 $_text_stroke, -2px 0px 0 $_text_stroke, 2px 0px 0 $_text_stroke;
+
+$_text_shadow_3px: -3px -3px 0 $_text_stroke, 3px -3px 0 $_text_stroke,
+  -3px 3px 0 $_text_stroke, 3px 3px 0 $_text_stroke, 0px -3px 0 $_text_stroke,
+  0px 3px 0 $_text_stroke, -3px 0px 0 $_text_stroke, 3px 0px 0 $_text_stroke;

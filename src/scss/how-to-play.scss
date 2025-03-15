@@ -1,0 +1,153 @@
+.how-to-play-page {
+  padding-top: 68px;
+}
+
+.container.container-how-to-play {
+  background-image: url('../img/how_to_play_m.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding-bottom: 32px;
+  @include retina {
+    background-image: url('../img/how_to_play_m@2x.png');
+  }
+  @include media(desktop) {
+    background-image: url('../img/how_to_play_d.png');
+    padding: 0 148px 200px 148px;
+    @include retina {
+      background-image: url('../img/how_to_play_d@2x.png');
+    }
+  }
+}
+
+.how-to-play-title {
+  height: auto;
+  font-size: 24px;
+  text-align: center;
+  color: $_title_color;
+  text-shadow: $_text_shadow_2px;
+  margin-bottom: 20px;
+  @include media(desktop) {
+    font-size: 48px;
+    text-shadow: $_text_shadow_3px;
+  }
+}
+
+.list-how-to-play {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  @include media(desktop) {
+    display: grid;
+    gap: 64px 62px;
+    grid-template-columns: repeat(3, 260px);
+    grid-template-rows: repeat(2, 310px);
+  }
+}
+
+.item-how-to-play {
+  position: relative;
+  width: 288px;
+  height: 218px;
+  @include media(desktop) {
+    width: 260px;
+    height: 310px;
+  }
+}
+
+.item-how-to-play:nth-child(1) {
+  @include media(desktop) {
+    grid-column: 1;
+    grid-row: 1;
+    transform: translateY(60px);
+  }
+}
+
+.item-how-to-play:nth-child(3) {
+  @include media(desktop) {
+    grid-column: 3;
+    grid-row: 1;
+    transform: translateY(60px);
+  }
+}
+
+.item-how-to-play:nth-child(4) {
+  @include media(desktop) {
+    grid-column: 1;
+    grid-row: 2;
+    transform: translateY(64px);
+  }
+}
+
+.item-how-to-play:nth-child(6) {
+  @include media(desktop) {
+    grid-column: 3;
+    grid-row: 2;
+    transform: translateY(64px);
+  }
+}
+
+.subtitle-how-to-play {
+  font-size: 48px;
+  text-align: center;
+  color: $_title_color;
+  margin-bottom: 16px;
+  text-shadow: $_text_shadow_2px;
+  @include media(desktop) {
+    font-size: 96px;
+    text-shadow: $_text_shadow_3px;
+  }
+}
+
+.text-how-to-play {
+  text-align: center;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.star-for-btn {
+  position: absolute;
+  top: 72%;
+  left: 43%;
+  @include media(desktop) {
+    width: 64px;
+    height: 76px;
+    top: 93%;
+    left: 41%;
+  }
+}
+
+.star-for-btn.second,
+.star-for-btn.third,
+.star-for-btn.sixth {
+  top: 82%;
+  left: 43%;
+  @include media(desktop) {
+    top: 93%;
+    left: 41%;
+  }
+}
+
+.star-for-btn.fourth {
+  @include media(desktop) {
+    top: 92%;
+  }
+}
+
+.text-how-to-play.fourth {
+  @include media(desktop) {
+    padding-bottom: 24px;
+  }
+}
+
+.how-to-play-btn {
+  @include media(desktop) {
+    position: absolute;
+    top: 89%;
+    right: 0;
+    width: 258px;
+    height: 66px;
+  }
+}
