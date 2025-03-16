@@ -2,8 +2,10 @@
 
 .cookies-page {
   padding-top: 20px;
+  padding-bottom: 24px;
   @include media(desktop) {
     padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -21,7 +23,6 @@
     padding: 0 56px;
   }
 }
-
 
 .link-return {
   border-radius: 12px;
