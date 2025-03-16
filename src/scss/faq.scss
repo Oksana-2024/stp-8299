@@ -48,11 +48,12 @@
   box-shadow: 0 4px 4px 0 $_shadow_btn;
   border: 2px solid $_border_box;
   @include media(desktop) {
+    text-align: center;
     font-size: 32px;
     text-shadow: $_text_shadow_2px;
     width: 720px;
     height: 56px;
-    padding: 9px 123px;
+    padding: 9px 24px;
     border: 4px solid $_border_box;
   }
 }
