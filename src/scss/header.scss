@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   position: fixed;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
   z-index: 999;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@
   @include media(desktop) {
     height: 108px;
     background-image: url('../img/bg_header_d.png');
-    box-shadow: $_shadow;
+    box-shadow: $_shadow_btn;
     @include retina {
       background-image: url('../img/bg_header_d@2x.png');
     }
