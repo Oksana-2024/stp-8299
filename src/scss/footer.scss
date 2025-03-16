@@ -112,12 +112,14 @@
 .store-text {
   font-size: 10px;
   text-transform: uppercase;
-  letter-spacing:0.03em;
+  letter-spacing: 0.03em;
 }
 
 .store-text-google {
   font-size: 14px;
-  letter-spacing:0.03em;
+  @include media(desktop) {
+    letter-spacing: 0.03em;
+  }
 }
 
 .star-footer {

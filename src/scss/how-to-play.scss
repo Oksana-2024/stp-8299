@@ -26,7 +26,7 @@
   text-align: center;
   color: $_title_color;
   text-shadow: $_text_shadow_2px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   @include media(desktop) {
     font-size: 48px;
     text-shadow: $_text_shadow_3px;
@@ -42,17 +42,16 @@
     display: grid;
     gap: 64px 62px;
     grid-template-columns: repeat(3, 260px);
-    grid-template-rows: repeat(2, 310px);
+    grid-template-rows: repeat(2, 314px);
   }
 }
 
 .item-how-to-play {
   position: relative;
   width: 288px;
-  height: 218px;
   @include media(desktop) {
     width: 260px;
-    height: 310px;
+    height: 314px;
   }
 }
 
@@ -75,25 +74,14 @@
   }
 }
 
-.star-for-btn {
+.star-how-to-play {
   position: absolute;
-  top: 72%;
+  bottom: -7%;
   left: 43%;
   @include media(desktop) {
     width: 64px;
     height: 76px;
-    top: 93%;
-    left: 41%;
-  }
-}
-
-.star-for-btn.second,
-.star-for-btn.third,
-.star-for-btn.sixth {
-  top: 82%;
-  left: 43%;
-  @include media(desktop) {
-    top: 93%;
+    bottom: -17%;
     left: 41%;
   }
 }
@@ -114,28 +102,16 @@
   .item-how-to-play:nth-child(4) {
     grid-column: 1;
     grid-row: 2;
-    transform: translateY(64px);
+    transform: translateY(62px);
   }
 
   .item-how-to-play:nth-child(6) {
     grid-column: 3;
     grid-row: 2;
-    transform: translateY(64px);
+    transform: translateY(62px);
   }
 
-  .star-for-btn.fourth {
-    top: 92%;
-  }
-
-  .text-how-to-play.fourth {
+    .text-how-to-play.fourth {
     padding-bottom: 24px;
-  }
-
-  .how-to-play-btn {
-    position: absolute;
-    top: 89%;
-    right: 0;
-    width: 258px;
-    height: 66px;
   }
 }
