@@ -2,7 +2,9 @@
   @include footer-padding('home');
 }
 
-.cookies footer {
+.cookies footer,
+.privacy footer,
+.terms footer {
   @include footer-padding('cookies');
 }
 

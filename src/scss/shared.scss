@@ -1,6 +1,8 @@
 //стилі для сторінок cookies, privacy, terms
 
-.cookies-page {
+.cookies-page,
+.privacy-page,
+.terms-page {
   padding-top: 20px;
   padding-bottom: 24px;
   @include media(desktop) {

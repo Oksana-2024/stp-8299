@@ -39,7 +39,7 @@ screen types:
 @mixin footer-padding($page) {
   @if $page == "home" {
     padding-top: 120px;
-  } @else if $page == "cookies" {
+  } @else {
     padding-top: 0;
   }
 }
