@@ -35,3 +35,11 @@ screen types:
     @content;
   }
 }
+
+@mixin footer-padding($page) {
+  @if $page == "home" {
+    padding-top: 120px;
+  } @else if $page == "cookies" {
+    padding-top: 0;
+  }
+}

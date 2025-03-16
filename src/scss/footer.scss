@@ -1,5 +1,9 @@
-.footer-page {
-  padding-top: 120px;
+.home footer {
+  @include footer-padding('home');
+}
+
+.cookies footer {
+  @include footer-padding('cookies');
 }
 
 .container.footer-container {
