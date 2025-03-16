@@ -40,19 +40,20 @@
   width: 288px;
   height: 40px;
   padding: 10px 24px;
-  border: 2px solid $_border_box;
   border-radius: 8px;
   font-size: 14px;
   color: $_title_color;
   text-shadow: $_text_shadow_1px;
   background: $_green_gradient;
   box-shadow: 0 4px 4px 0 $_shadow_btn;
+  border: 2px solid $_border_box;
   @include media(desktop) {
     font-size: 32px;
     text-shadow: $_text_shadow_2px;
     width: 720px;
     height: 56px;
     padding: 9px 123px;
+    border: 4px solid $_border_box;
   }
 }
 
