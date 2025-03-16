@@ -76,12 +76,12 @@
 
 .star-how-to-play {
   position: absolute;
-  bottom: -7%;
+  bottom: -13px;
   left: 43%;
   @include media(desktop) {
     width: 64px;
     height: 76px;
-    bottom: -17%;
+    bottom:-52px;
     left: 41%;
   }
 }
