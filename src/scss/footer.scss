@@ -202,3 +202,29 @@
     right: 26.5%;
   }
 }
+
+.scroll-btn {
+  border: 2px solid $_accent_color;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 56px;
+  height: 48px;
+  color: $_accent_color;
+  background: $_btn_gradient;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: max(18px, 2vw);
+  bottom: max(114px, 2vw);
+  z-index: 10;
+  display: none;
+  @include media(desktop) {
+    right: max(56px, 2vw);
+    bottom: max(66px, 2vw);
+    font-size: 20px;
+    width: 76px;
+    height: 44px;
+    border-radius: 12px;
+  }
+}
