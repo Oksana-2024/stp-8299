@@ -1,0 +1,104 @@
+.faq-page {
+  padding-top: 68px;
+  background-image: url('../img/faq_bg_m.png');
+  background-repeat: no-repeat;
+  background-size: 320px 396px;
+  background-position: bottom;
+  @include retina {
+    background-image: url('../img/faq_bg_m@2x.png');
+  }
+  @include media(desktop) {
+    padding-top: 108px;
+    background-image: url('../img/faq_bg_d.png');
+    background-size: 1200px 574px;
+    @include retina {
+      background-image: url('../img/faq_bg_d@2x.png');
+    }
+  }
+}
+
+.faq-title {
+  font-size: 24px;
+  text-align: center;
+  color: $_title_color;
+  text-shadow: $_text_shadow_2px;
+  margin-bottom: 20px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 44px;
+  }
+}
+
+.accordion-trigger {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-subtitle {
+  position: relative;
+  width: 288px;
+  height: 40px;
+  padding: 10px 24px;
+  border: 2px solid $_border_box;
+  border-radius: 8px;
+  font-size: 14px;
+  color: $_title_color;
+  text-shadow: $_text_shadow_1px;
+  background: $_green_gradient;
+  box-shadow: 0 4px 4px 0 $_shadow_btn;
+  @include media(desktop) {
+    font-size: 32px;
+    text-shadow: $_text_shadow_2px;
+    width: 720px;
+    height: 56px;
+    padding: 9px 123px;
+  }
+}
+
+.accordion-body {
+  width: 288px;
+  box-shadow: 0 4px 4px 0 $_shadow_btn;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+  border: 2px solid $_border_box;
+  border-radius: 8px;
+  transition: height 1s ease, opacity 1s ease, visibility 1s ease;
+  margin-bottom: 40px;
+  @include media(desktop) {
+    width: 720px;
+  }
+}
+
+.accordion-text {
+  padding: 18px 4px;
+  font-size: 16px;
+  text-align: center;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.accordion-item.active .accordion-body {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.star-icon {
+  position: absolute;
+  bottom: 26px;
+  right: 5px;
+  z-index: 2;
+  @include media(desktop) {
+    width: 64px;
+    bottom: 20px;
+  }
+}
+
+.accordion-item.active .star-icon {
+  bottom: 10px;
+}
