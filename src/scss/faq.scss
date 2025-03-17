@@ -1,5 +1,20 @@
-.faq-page {
+
+
+.container.faq-container{
   padding-top: 68px;
+  padding-bottom: 64px;
+  position: relative;
+  overflow: hidden;
+  @include media(desktop) {
+    padding-top: 108px;}
+}
+
+.background-decor{
+  position: absolute;
+  width: 320px;
+  height: 396px;
+  top: 58px;
+  left: 0;
   background-image: url('../img/faq_bg_m.png');
   background-repeat: no-repeat;
   background-size: 320px 396px;
@@ -8,13 +23,15 @@
     background-image: url('../img/faq_bg_m@2x.png');
   }
   @include media(desktop) {
-    padding-top: 108px;
+    width: 1200px;
+    height: 574px;
     background-image: url('../img/faq_bg_d.png');
     background-size: 1200px 574px;
     @include retina {
       background-image: url('../img/faq_bg_d@2x.png');
     }
   }
+
 }
 
 .faq-title {
