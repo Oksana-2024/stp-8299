@@ -1,5 +1,8 @@
 .how-to-play-page {
   padding-top: 68px;
+  @include media(desktop) {
+    padding-top: 116px;
+      }
 }
 
 .container.container-how-to-play {

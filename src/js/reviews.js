@@ -10,18 +10,15 @@ function initSwiper() {
       swiper = new Swiper('.js-revies-swiper', {
         direction: 'horizontal',
         centerInsufficientSlides: true,
-        /* spaceBetween: 24, */
-        /*  autoHeight: true, */
         slidesPerView: 1,
         pagination: {
-          // Пагінація (точки)
           el: '.swiper-pagination',
           clickable: true,
         },
         modules: [Pagination],
         breakpoints: {
           1200: {
-            enabled: false, // Вимкнення слайдера при 1200px і більше
+            enabled: false,
           },
         },
       });

@@ -1,37 +1,44 @@
-
-
-.container.faq-container{
+.container.faq-container {
   padding-top: 68px;
-  padding-bottom: 64px;
   position: relative;
-  overflow: hidden;
-  @include media(desktop) {
-    padding-top: 108px;}
-}
-
-.background-decor{
-  position: absolute;
-  width: 320px;
-  height: 396px;
-  top: 58px;
-  left: 0;
   background-image: url('../img/faq_bg_m.png');
   background-repeat: no-repeat;
   background-size: 320px 396px;
-  background-position: bottom;
+  background-position: 0px 63px;
   @include retina {
     background-image: url('../img/faq_bg_m@2x.png');
   }
   @include media(desktop) {
-    width: 1200px;
-    height: 574px;
+    background-position: 0px 108px;
+    padding-top: 108px;
     background-image: url('../img/faq_bg_d.png');
     background-size: 1200px 574px;
     @include retina {
       background-image: url('../img/faq_bg_d@2x.png');
     }
   }
+}
 
+.faq-box {
+  position: relative;
+  width: 320px;
+  height: 396px;
+  top: -5px;
+  left: 0;
+  @include media(desktop) {
+    top:-11px;
+    width: 1200px;
+    height: 574px;
+    overflow: hidden;
+  }
+}
+
+.accordion {
+  max-height: 396px;
+  transition: all 500ms ease;
+  @include media(desktop) {
+    top: 216px;
+  }
 }
 
 .faq-title {
@@ -109,15 +116,16 @@
 
 .star-icon {
   position: absolute;
-  bottom: 26px;
-  right: 5px;
+  bottom: 27px;
+  right: 34px;
   z-index: 2;
   @include media(desktop) {
     width: 64px;
-    bottom: 20px;
+    right: 497px;
+    bottom: 16px;
   }
 }
 
 .accordion-item.active .star-icon {
-  bottom: 10px;
+  bottom: 1px;
 }
