@@ -1,0 +1,78 @@
+.header-page {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+.container.header-container {
+  background-image: url('../img/bg_header_m.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 56px;
+  background-size: 320px 56px;
+  @include retina {
+    background-image: url('../img/bg_header_m@2x.png');
+  }
+  @include media(desktop) {
+    padding: 18px 56px;
+    height: 108px;
+    background-image: url('../img/bg_header_m.png');
+    background-size: 1200px 108px;
+    @include retina {
+      background-image: url('../img/bg_header_d@2x.png');
+    }
+  }
+}
+
+.header-mob-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  align-items: center;
+  justify-content: start;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.icon-burger {
+  fill: $_white;
+}
+.nav-header {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+@include media(desktop) {
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-logo {
+    border-radius: 12px;
+  }
+  .nav-link {
+    width: 140px;
+    height: 28px;
+    &:hover {
+      border-bottom: 4px solid $_white;
+      border-radius: 4px;
+    }
+  }
+}
+.header-logo-mobile {
+  border-radius: 8px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.mob-menu-btn {
+  background-color: transparent;
+}

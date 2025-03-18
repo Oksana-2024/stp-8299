@@ -30,16 +30,30 @@ screen types:
 
 @mixin retina {
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-         (min-resolution: 2dppx),
-         (min-resolution: 192dpi) {
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
     @content;
   }
 }
 
 @mixin footer-padding($page) {
-  @if $page == "home" {
-    padding-top: 120px;
+  @if $page == 'home' {
+    padding-top: 68px;
+    @include media(desktop) {
+      padding-top: 120px;
+    }
   } @else {
     padding-top: 0;
+  }
+}
+
+@mixin swiper-bottom($_section) {
+  @if $_section == 'gallery-page' {
+    margin-bottom: 16px;
+  }
+  @if $_section == 'reviews-page' {
+    margin-bottom: 12px;
+  } @else {
+    margin-bottom: 10px;
   }
 }
