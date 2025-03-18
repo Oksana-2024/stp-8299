@@ -3,7 +3,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
-
 let swiper;
 function initSwiper() {
   if (window.innerWidth < 1200) {
@@ -15,12 +14,11 @@ function initSwiper() {
         autoHeight: true,
         slidesPerView: 1,
         pagination: {
-          // Пагінація (точки)
+          // Пагінація (dote)
           el: '.swiper-pagination',
           clickable: true,
         },
         modules: [Pagination],
-        /*  breakpointsBase: 'container', */
         breakpoints: {
           1200: {
             enabled: false, // Вимкнення слайдера при 1200px і більше

@@ -127,3 +127,7 @@
   transition: width 500ms ease,
     height 500ms ease;
 }
+
+.swiper-wrapper {
+  @include swiper-bottom('gallery-page');
+}
