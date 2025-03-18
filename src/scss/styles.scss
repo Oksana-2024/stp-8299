@@ -21,6 +21,17 @@
   position: relative;
 }
 
+.home {
+  position: relative;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @import url('./header.scss');
 @import url('./hero.scss');
 @import url('./game-description.scss');

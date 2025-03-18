@@ -1,3 +1,3 @@
 export const refs = {
-  scrollBtn: document.querySelector(".js-scroll-btn")
+  scrollBtn: document.querySelector(".js-scroll-btn"),
 }

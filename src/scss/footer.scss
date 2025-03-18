@@ -218,6 +218,7 @@
   bottom: max(114px, 2vw);
   z-index: 10;
   display: none;
+  box-shadow: 0 4px 4px 0 $_shadow_btn;
   @include media(desktop) {
     right: max(56px, 2vw);
     bottom: max(66px, 2vw);
@@ -225,5 +226,10 @@
     width: 76px;
     height: 44px;
     border-radius: 12px;
+    transition: border 500ms ease, border-bottom 500ms ease;
+    &:hover {
+      border: none;
+      border-bottom: 4px solid $_white;
+    }
   }
 }

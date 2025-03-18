@@ -21,7 +21,9 @@
 }
 
 @include media(desktop) {
-  .container.cookies-container {
+  .container.privacy-container,
+  .container.cookies-container,
+  .container.terms-container {
     padding: 0 56px;
   }
 }
@@ -90,8 +92,10 @@
 .list-policy {
   list-style-type: disc;
   padding-left: 30px;
+  margin-bottom: 20px;
   @include media(desktop) {
     padding-left: 35px;
+    margin-bottom: 24px;
   }
 }
 
@@ -107,4 +111,15 @@
     word-break: keep-all;
     font-size: 24px;
   }
+}
+
+.link-google {
+  margin-bottom: 20px;
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.website-link.keep-world {
+  word-break: keep-all;
 }

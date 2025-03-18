@@ -1,5 +1,8 @@
 .descr-page {
   padding-top: 68px;
+  @include media(desktop) {
+    padding-top: 116px;
+  }
 }
 
 .container.container-descr {
@@ -100,4 +103,3 @@
     height: 76px;
   }
 }
-
