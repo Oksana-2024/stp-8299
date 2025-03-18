@@ -1,0 +1,111 @@
+.container.hero-container {
+  padding-top: 62px;
+  padding-bottom: 64px;
+  background-image: url('../img/hero_bg_m.png');
+  background-repeat: no-repeat;
+  background-position: 0px 69px;
+  background-size: contain;
+  @include retina {
+    background-image: url('../img/hero_bg_m@2x.png');
+  }
+  @include media(desktop) {
+    background-position: 0px 120px;
+    padding-top: 116px;
+    padding-bottom: 64px;
+    background-image: url('../img/hero_bg_d.png');
+    @include retina {
+      background-image: url('../img/hero_bg_d@2x.png');
+    }
+  }
+}
+
+.title-hero {
+  font-size: 24px;
+  text-align: center;
+  color: $_title_color;
+  text-shadow: $_text_shadow_3px;
+  margin-bottom: 8px;
+  @include media(desktop) {
+    font-size: 64px;
+    margin-bottom: 12px;
+  }
+}
+
+.subtitle-hero {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  @include media(desktop) {
+    font-size: 32px;
+    margin-bottom: 23px;
+  }
+}
+
+.list-hero {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.img-item-hero {
+  border: 2px solid $_white;
+  border-radius: 8px;
+}
+
+@include media(desktop) {
+  .img-item-hero.first {
+    rotate: -20deg;
+  }
+
+  .img-item-hero.last {
+    rotate: 20deg;
+  }
+}
+
+.text-hero {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  @include media(desktop) {
+    margin-bottom: 22px;
+    font-size: 24px;
+  }
+}
+
+.button-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $_accent_color;
+  color: $_accent_color;
+  border-radius: 8px;
+  background: $_btn_gradient;
+  width: 288px;
+  height: 56px;
+  font-size: 24px;
+  font-family: $_main_font;
+  @include media(desktop) {
+    border-radius: 12px;
+    width: 720px;
+    height: 68px;
+    font-size: 32px;
+  }
+}
+
+.hero-swiper {
+  overflow-x: hidden;
+  margin-bottom: 33px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.swiper-wrapper {
+  @include swiper-bottom('hero-page');
+}
