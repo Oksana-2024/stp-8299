@@ -3,5 +3,5 @@ export const refs = {
   menuBtn: document.querySelector('.js-menu-open'),
   mobileMenu: document.querySelector('.js-mob-menu'),
   closeBtn: document.querySelector('.js-mob-menu-close'),
-  menuLinks: document.querySelectorAll('.js-nav-link'),
+  menuLinks: document.querySelectorAll('.js-link-mob-menu'),
 };

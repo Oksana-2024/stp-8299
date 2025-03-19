@@ -5,6 +5,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
+  background-color: $_main_bg_color;
   visibility: hidden;
   pointer-events: none;
   transform: translateY(-100%);
@@ -17,4 +18,87 @@
   visibility: visible;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+.logo-menu {
+  border-radius: 8px;
+}
+
+.mob-menu-header {
+  padding: 10px 0 10px 126px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mob-menu-container {
+  padding-bottom: 20px;
+  background-image: url('../img/bg_header_m.png'), url('../img/mob_menu_bg.png'),
+    url('../img/mob_menu_down.png');
+  background-repeat: no-repeat;
+  background-position: top, 0px 56px, 0px 566px;
+  @include retina {
+    background-image: url('../img/bg_header_m@2x.png'),
+      url('../img/mob_menu_bg@2x.png'), url('../img/mob_menu_down@2x.png');
+  }
+}
+
+.mob-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-close-icon {
+  fill: $_white;
+}
+
+.mob-nav {
+  margin-bottom: 109px;
+}
+
+.list-mob-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+
+.item-mob-menu {
+  position: relative;
+}
+
+.link-mob-menu {
+  border: 2px solid $_border_box;
+  border-radius: 8px;
+  width: 288px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $_green_gradient;
+  color: $_title_color;
+  text-shadow: $_text_shadow_1px;
+  text-align: center;
+}
+
+.star-mob-menu {
+  position: absolute;
+  top: 0px;
+  right: 1px;
+}
+
+.mob-menu-play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $_accent_color;
+  color: $_accent_color;
+  border-radius: 8px;
+  background: $_btn_gradient;
+  width: 288px;
+  height: 56px;
+  font-size: 24px;
+  font-family: $_main_font;
 }
