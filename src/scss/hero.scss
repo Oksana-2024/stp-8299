@@ -56,6 +56,7 @@
 .img-item-hero {
   border: 2px solid $_white;
   border-radius: 8px;
+  box-shadow: -5px 5px 8px 0 $_shadow_img;
 }
 
 @include media(desktop) {
