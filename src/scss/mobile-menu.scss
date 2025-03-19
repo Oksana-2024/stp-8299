@@ -34,16 +34,20 @@
 }
 
 .mob-menu-container {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
   padding-bottom: 20px;
   background-image: url('../img/bg_header_m.png'), url('../img/mob_menu_bg.png'),
     url('../img/mob_menu_down.png');
   background-repeat: no-repeat;
-  background-position: top, 0px 56px, 0px 566px;
+  background-position: top, 0px 56px, 0px 576px;
   background-size: 320px 56px, 321px 504px, 320px 56px;
   @include retina {
     background-image: url('../img/bg_header_m@2x.png'),
       url('../img/mob_menu_bg@2x.png'), url('../img/mob_menu_down@2x.png');
   }
+
 }
 
 .mob-menu-close {
@@ -102,4 +106,5 @@
   height: 56px;
   font-size: 24px;
   font-family: $_main_font;
+  margin: 0 auto;
 }
