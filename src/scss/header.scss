@@ -61,6 +61,8 @@
   .nav-link {
     width: 140px;
     height: 28px;
+    font-size: 24px;
+    text-align: center;
     transition: border-bottom 500ms $_bezier, border-radius 500ms $_bezier;
     &:hover {
       border-bottom: 4px solid $_white;
@@ -79,4 +81,3 @@
   background-color: transparent;
   padding: 1px;
 }
-

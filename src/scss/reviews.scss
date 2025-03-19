@@ -65,12 +65,16 @@
   text-align: center;
   margin-bottom: 12px;
   @include media(desktop) {
+    font-size: 24px;
     margin-bottom: 8px;
   }
 }
 .text-reviews {
   font-size: 16px;
   text-align: center;
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }
 
 .reviews-card-desktop {
@@ -132,5 +136,4 @@
     top: 6px;
     left: 151px;
   }
-
 }

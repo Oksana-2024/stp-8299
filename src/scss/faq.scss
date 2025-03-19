@@ -80,7 +80,7 @@
     height: 56px;
     padding: 9px 0;
     border: 4px solid $_border_box;
-    transition: border-bottom 500ms ease;
+    transition: border-bottom 500ms $_bezier;
     &:hover {
       border: none;
       border-bottom: 4px solid $_white;
