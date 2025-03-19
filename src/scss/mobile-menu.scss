@@ -25,12 +25,11 @@
 }
 
 .mob-menu-header {
-  padding: 10px 0 10px 126px;
+  padding: 10px 16px 10px 142px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .mob-menu-container {
@@ -57,10 +56,12 @@
 }
 
 .menu-close-icon {
-  fill: $_white;
+  stroke: $_white;
+ /*  stroke-width: 2px; */
 }
 
 .mob-nav {
+  padding-top: 20px;
   margin-bottom: 109px;
 }
 
