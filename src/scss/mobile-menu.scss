@@ -39,6 +39,7 @@
     url('../img/mob_menu_down.png');
   background-repeat: no-repeat;
   background-position: top, 0px 56px, 0px 566px;
+  background-size: 320px 56px, 321px 504px, 320px 56px;
   @include retina {
     background-image: url('../img/bg_header_m@2x.png'),
       url('../img/mob_menu_bg@2x.png'), url('../img/mob_menu_down@2x.png');
