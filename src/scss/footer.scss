@@ -122,7 +122,6 @@
 .store-text {
   font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
 }
 
 .store-text-google {
@@ -188,8 +187,8 @@
   display: inline-block;
   @include media(desktop) {
     font-size: 24px;
-    transition: border-bottom 500ms ease, border-radius 500ms ease;
-    overflow: hidden;
+    transition: border-bottom 500ms $_bezier, border-radius 500ms $_bezier;
+    overflow: $_bezier;
     &:hover {
       border-bottom: 4px solid $_white;
       border-radius: 4px;
@@ -253,7 +252,7 @@
     width: 76px;
     height: 44px;
     border-radius: 12px;
-    transition: border-bottom 500ms ease;
+    transition: border-bottom 500ms $_bezier;
     &:hover {
       border: none;
       border-bottom: 4px solid $_white;

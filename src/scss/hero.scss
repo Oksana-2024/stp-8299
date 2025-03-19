@@ -1,6 +1,7 @@
 .container.hero-container {
   padding-top: 62px;
-  padding-bottom: 64px;
+  padding-bottom: 20px;
+  min-height: 532px;
   background-image: url('../img/hero_bg_m.png');
   background-repeat: no-repeat;
   background-position: 0px 69px;
@@ -97,7 +98,7 @@
     width: 720px;
     height: 68px;
     font-size: 32px;
-    transition: border-bottom 500ms ease;
+    transition: border-bottom 500ms $_bezier;
     &:hover {
       border: none;
       border-bottom: 4px solid $_white;

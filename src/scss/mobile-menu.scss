@@ -9,7 +9,7 @@
   visibility: hidden;
   pointer-events: none;
   transform: translateY(-100%);
-  transition: opacity 1s ease, visibility 1s ease, transform 1s ease;
+  transition: opacity 1s $_bezier, visibility 1s $_bezier, transform 1s $_bezier;
   z-index: 98;
 }
 
@@ -29,7 +29,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .mob-menu-container {
@@ -46,18 +45,10 @@
     background-image: url('../img/bg_header_m@2x.png'),
       url('../img/mob_menu_bg@2x.png'), url('../img/mob_menu_down@2x.png');
   }
-
-}
-
-.mob-menu-close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .menu-close-icon {
-  stroke: $_white;
- /*  stroke-width: 2px; */
+  fill: $_white;
 }
 
 .mob-nav {

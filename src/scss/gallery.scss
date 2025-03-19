@@ -124,8 +124,8 @@
 .swiper-pagination-bullet {
   background: $_white !important;
   opacity: 1 !important;
-  transition: width 500ms ease,
-    height 500ms ease;
+  transition: width 500ms $_bezier,
+    height 500ms $_bezier;
 }
 
 .swiper-wrapper {

@@ -1,13 +1,15 @@
 .container.reviews-container {
+  padding-top: 68px;
   padding-bottom: 32px;
   background-image: url('../img/reviews_bg_m.png');
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   background-size: 320px 324px;
   @include retina {
     background-image: url('../img/reviews_bg_m@2x.png');
   }
   @include media(desktop) {
+    padding-top: 116px;
     background-size: 1200px 656px;
     padding-bottom: 72px;
     background-image: url('../img/reviews_bg_d.png');

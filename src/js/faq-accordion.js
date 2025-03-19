@@ -6,5 +6,6 @@ new Accordion('.js-accordion', {
   triggerClass: 'js-accordion-trigger',
   panelClass: 'js-accordion-body',
   activeClass: 'active',
-  openOnInit: [],
+  collapse: false,
+  openOnInit: [0],
 });

@@ -1,8 +1,14 @@
 $_main_color: #fff;
 $_second_color: #000;
 $_title_color: #ffe433;
-$_main_bg_color: #59b4f1;
 $_accent_color: #eb4930;
+$_modal_color: #fafafa;
+$_white: #fff;
+$_black: #000;
+$_main_bg_color: #59b4f1;
+$_modal_bg_color: #35a3ec;
+$_drop_bg_color: rgb(53, 163, 236, 0.5);
+$_border_box: #18c92c;
 $_shadow_img: rgba(0, 0, 0, 0.18);
 $_shadow_btn: rgba(0, 0, 0, 0.25);
 $_btn_gradient: linear-gradient(180deg, #ffe433 0%, #fff4b0 35%, #f9bb1e 100%);
@@ -12,20 +18,24 @@ $_green_gradient: linear-gradient(
   #7affaa 56%,
   #0cc24e 100%
 );
-$_white: #fff;
-$_black: #000;
-$_border_box: #18c92c;
+$_blue_gradient: linear-gradient(
+  180deg,
+  #005186 0%,
+  #008eec 28.1%,
+  #92d4ff 64.1%,
+  #5cbeff 100%
+);
 
 $_main_font: 'Poetsen One', sans-serif;
 
 $_text_shadow_1px: -1px -1px 0 $_accent_color, 1px -1px 0 $_accent_color,
   -1px 1px 0 $_accent_color, 1px 1px 0 $_accent_color, 0px -1px 0 $_accent_color,
   0px 1px 0 $_accent_color, -1px 0px 0 $_accent_color, 1px 0px 0 $_accent_color;
-
 $_text_shadow_2px: -2px -2px 0 $_accent_color, 2px -2px 0 $_accent_color,
   -2px 2px 0 $_accent_color, 2px 2px 0 $_accent_color, 0px -2px 0 $_accent_color,
   0px 2px 0 $_accent_color, -2px 0px 0 $_accent_color, 2px 0px 0 $_accent_color;
-
 $_text_shadow_3px: -3px -3px 0 $_accent_color, 3px -3px 0 $_accent_color,
   -3px 3px 0 $_accent_color, 3px 3px 0 $_accent_color, 0px -3px 0 $_accent_color,
   0px 3px 0 $_accent_color, -3px 0px 0 $_accent_color, 3px 0px 0 $_accent_color;
+
+$_bezier: cubic-bezier(0.5, 0, 0.2, 1);
