@@ -91,11 +91,17 @@
   height: 56px;
   font-size: 24px;
   font-family: $_main_font;
+
   @include media(desktop) {
     border-radius: 12px;
     width: 720px;
     height: 68px;
     font-size: 32px;
+    transition: border-bottom 500ms ease;
+    &:hover {
+      border: none;
+      border-bottom: 4px solid $_white;
+    }
   }
 }
 

@@ -60,6 +60,7 @@
   .nav-link {
     width: 140px;
     height: 28px;
+    transition: border-bottom 500ms ease, border-radius 500ms ease;
     &:hover {
       border-bottom: 4px solid $_white;
       border-radius: 4px;

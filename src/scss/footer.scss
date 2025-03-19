@@ -104,7 +104,12 @@
   gap: 20px;
   align-items: center;
   @include media(desktop) {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
 }
 
@@ -127,10 +132,23 @@
   }
 }
 
-.star-footer {
+.star-footer.first {
   display: none;
   @include media(desktop) {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.star-footer.second {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -146,18 +164,21 @@
 }
 
 .link-box-footer {
-  max-width: 248px;
+  width: 248px;
   display: flex;
   gap: 4px;
   flex-direction: column;
   align-items: center;
   @include media(desktop) {
     position: relative;
-    max-width: 790px;
+    width: 800px;
+    display: flex;
     flex-direction: row;
-    gap: 12px 8px;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 36px;
+    overflow: hidden;
+    padding-left: 86px;
+    padding-right: 86px;
   }
 }
 
@@ -167,6 +188,12 @@
   display: inline-block;
   @include media(desktop) {
     font-size: 24px;
+    transition: border-bottom 500ms ease, border-radius 500ms ease;
+    overflow: hidden;
+    &:hover {
+      border-bottom: 4px solid $_white;
+      border-radius: 4px;
+    }
   }
 }
 
@@ -186,8 +213,8 @@
     height: 0px;
     transform: rotate(-90deg);
     position: absolute;
-    top: 23%;
-    left: 27.5%;
+    top: 39%;
+    left: 31.5%;
   }
 
   .decor-line-secondary::after {
@@ -197,8 +224,8 @@
     height: 0px;
     transform: rotate(-90deg);
     position: absolute;
-    top: 23%;
-    right: 27.5%;
+    top: 39%;
+    right: 31.5%;
   }
 }
 
@@ -226,7 +253,7 @@
     width: 76px;
     height: 44px;
     border-radius: 12px;
-    transition: border 500ms ease, border-bottom 500ms ease;
+    transition: border-bottom 500ms ease;
     &:hover {
       border: none;
       border-bottom: 4px solid $_white;
