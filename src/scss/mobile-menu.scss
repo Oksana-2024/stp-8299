@@ -67,12 +67,13 @@
 }
 
 .link-mob-menu {
+  padding-top: 5px;
   border: 2px solid $_border_box;
   border-radius: 8px;
   width: 288px;
   height: 40px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   background: $_green_gradient;
   color: $_title_color;
