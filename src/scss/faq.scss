@@ -123,12 +123,12 @@
 .star-icon {
   position: absolute;
   bottom: 27px;
-  right: 5px;
+  right: 0px;
   z-index: 2;
   @include media(desktop) {
     width: 64px;
     right: 20px;
-    bottom: 24px;
+    bottom: 16px;
   }
 }
 
