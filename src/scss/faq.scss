@@ -23,13 +23,13 @@
 
 .faq-box {
   position: relative;
-  width: 320px;
+  max-width: 320px;
   height: 396px;
   top: -5px;
   left: 0;
   @include media(desktop) {
     top:-11px;
-    width: 1200px;
+    max-width: 1200px;
     height: 574px;
     overflow: hidden;
   }
