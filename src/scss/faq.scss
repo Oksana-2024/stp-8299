@@ -73,7 +73,9 @@
   box-shadow: 0 4px 4px 0 $_shadow_btn;
   border: 2px solid $_border_box;
   @include media(desktop) {
-    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     font-size: 32px;
     text-shadow: $_text_shadow_2px;
     width: 720px;
