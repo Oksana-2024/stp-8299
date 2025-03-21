@@ -76,18 +76,16 @@
 }
 
 .store-btn-footer {
+  position: relative;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 4px;
   border: 1px solid $_black;
   border-radius: 6px;
-  padding: 4px 8px;
+  padding: 4px 8px 4px 32px;
   width: 120px;
   height: 40px;
   background-color: $_white;
   color: $_second_color;
-  padding: 4px 8px;
   margin-bottom: 34px;
   @include media(desktop) {
     margin-bottom: 0;
@@ -95,6 +93,12 @@
     top: 38%;
     right: 15%;
   }
+}
+
+.icon-playstore{
+  position: absolute;
+  top: 5px;
+  left: 6px;
 }
 
 .privacy-box-footer {
@@ -126,9 +130,6 @@
 
 .store-text-google {
   font-size: 14px;
-  @include media(desktop) {
-    letter-spacing: 0.03em;
-  }
 }
 
 .star-footer.first {
@@ -188,7 +189,6 @@
   @include media(desktop) {
     font-size: 24px;
     transition: border-bottom 500ms $_bezier, border-radius 500ms $_bezier;
-    overflow: $_bezier;
     &:hover {
       border-bottom: 4px solid $_white;
       border-radius: 4px;
