@@ -44,16 +44,22 @@
 .nav-header {
   display: none;
   @include media(desktop) {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    gap: 32px;
+    align-items: center;
   }
 }
 
 @include media(desktop) {
   .nav-list {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
   }
   .header-logo {
     border-radius: 12px;
